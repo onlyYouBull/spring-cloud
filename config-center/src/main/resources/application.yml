@@ -1,0 +1,15 @@
+#本地配置文件读取目录
+spring:
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: classpath:/shared
+
+  # springCloud Config也支持本地参数配置的获取
+  profiles:
+    active: native
+
+
+server:
+  port: 8888
